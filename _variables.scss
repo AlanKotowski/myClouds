@@ -1,0 +1,13 @@
+@mixin lightWhiteGlassmorphism {
+    background: rgba( 255, 255, 255, 0.6 );
+    backdrop-filter: blur(4px);
+    
+    }
+    
+    @mixin lightGreyGlassmorphism {
+        background: rgba(104, 103, 103, 0.6);
+        backdrop-filter: blur(4px);
+        
+        }
+
+    

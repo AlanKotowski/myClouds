@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mansh">
+    <title>Clouds Timelapses</title>
+    <meta name="description" content="Clouds. Just clouds.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <!-- TOP PANEL - LOGO & DROPDOWN MENU -->
+    <nav class="pageNavigation">
+        <h1 class="logo"> <a href="index.html" id="logoLink">myClouds</a></h1>
+        <div class="menuWrapper">
+            <ul>
+                <a href="#intro"><li>Pomysł na hobby</li></a>
+                <li class="timelapseDIYList">Timelapse- zrób to sam! <p class="timelapseTriangle">&#128710;</p>
+                    <ul class="timelapseDIY">
+                        <a href="#cloud1"> <li>Urządzenie</li> </a>
+                        <a href="#cloud2"> <li>Statyw na nasze urządzenie</li> </a>
+                        <a href="#cloud3"> <li>Czas</li> </a>
+                        <a href="#cloud4"> <li>Obiekt naszego nagrania</li> </a>
+                        <a href="#cloud5"> <li>Program do obróbki</li> </a>
+                        <a href="#cloud6"> <li>Alternatywna metoda</li> </a>
+                    </ul>
+                </li>
+                <a href="#timelapseGalery"><li>Galeria Timelapse</li></a>
+        </ul>
+            <form action="forms.txt" method="post" class="loginForm">
+                <div class="loginSpace"> <label for="login">Login:</label> <input type="text" name="login" class="login" placeholder="example@domain.org"> <br></div>
+                   <div class="passwordSpace"> <label for="password"> Password:</label> <input type="password" name="password" class="password" placeholder="password"> <br></div>
+                   <div class="buttonsSpace"> 
+                     <input type="submit" value="Log in" class="submitCredentials"> 
+                     or 
+                     <a href="createAccount.html"><input type="button" value="Create new account" class="createAccountButton"></a>
+                 </div>
+                    
+               </form>
+               <div class="colorSpace">
+               <button class="burgerMenu">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+              </button>
+            </div>
+            </div>
+        
+    </nav>
+    <!-- VIDEOBACKGROUND -->
+    <header class="videoBackground">
+        <video muted loop autoplay class="videoBg">
+            <source src="images/tajmlapsy/timelapse5.mp4" type="video/mp4">
+        </video>
+        <img src="images/whiteWindow4.svg" alt="opened window" class="whiteWindow">
+    </header>
+
+    <!-- FIRST ARTICLE -->
+    <section class="intro">
+        <div id="intro"></div>
+        <article>
+            <img src="images/cloudsStaring.jpg" alt="Staring at clouds" class="cloudsStaring">
+            <header class="headerIntro">
+            Oglądanie płynących obłoków chmur- według mnie jedna z najbardziej uspokajających czynności, jaką człowiek może sobie zapewnić. Niestety dzisiejsze czasy nie pozwalają na zbyt długie chwile relaksu, zatem i sposób dostarczania spokoju powinien być skompresowany
+            </header>
+           <h1>Rozwiązaniem są tak zwane timelapse- przyspieszone nagranie jakiejkolwiek rzeczy, w której można zauważyć jej zmienność. Mogą to być rosnące rośliny, topniejący śnieg czy płynące obłoki chmur- jedynie od nas samych zależy, jaki obraz będziemy chcieli przyspieszyć </h1>
+    </article>
+    </section>
+    <br><br><br><br><br><br>
+    <!-- SECOND ARTICLE - TIMELAPSE DIY & EASING IN & OUT -->
+    <section id="timelapseDIY">
+        <article>
+            <header>
+                <img src="images/brain.jpg" alt="brain" class="brain">
+            <h1>Tilemapses are fun and simple in production, but they are consuming so much time.</h1>
+            <h1>They are so simple, that everyone can make them, even without advanced cameras.</h1>
+            </header>
+                
+                <section class="cloud" id="cloud1"><div class="cloudName">Urządzenie</div> <div class="cloud1 easing">
+                    <div class="stepsContainer">
+                        <p>może to być telefon, aparat czy kamera; zarówno zwykła, jak i bardziej zaawansowana- im lepsze parametry udządzenia, tym potencajlna lepsza jakośc naszego tworu</p>
+                        <img src="images/device.svg" alt="camera" class="stepsImages">
+                    </div>
+                   
+                </div></section>
+                <div class="cloud" id="cloud2"><div class="cloudName">Statyw</div> <div class="cloud2 easing">
+                    <div class="stepsContainer">
+                        <p>stabilnie umiejscowione urządzenia pozwoli nam pozbyć się rozmyć czy szumów. A poza tym, kto wytrzymałby w bezruchu z telefonem przez kilkadziesiąt minut?</p>
+                        <img src="images/statyw.svg" alt="camera" class="stepsImages">
+                    </div>
+                    </div></div>
+                <div class="cloud" id="cloud3"><div class="cloudName">Czas</div> <div class="cloud3 easing">
+                    
+                    <div class="stepsContainer">
+                        <p>nasze timelapsy mogą być zarówno dłuższe i krótsze- niezależnie od tego, takie nagranie potrzebuje adekwatnego podłoża materiałowego</p>
+                        <img src="images/watch.svg" alt="camera" class="stepsImages">
+                    </div>
+                    
+                    </div></div>
+                <div class="cloud" id="cloud4"><div class="cloudName">Obiekt</div> <div class="cloud4 easing">
+                    
+                    <div class="stepsContainer">
+                        <p>mniejsze jak roślina, większe jak cały krajobraz- nasz cel, element który chcemy uchwycić "na szybko"</p>
+                        <img src="images/object.svg" alt="camera" class="stepsImages">
+                    </div>
+                    
+                    </div></div>
+                <div class="cloud" id="cloud5"><div class="cloudName">Obróbka</div> <div class="cloud5 easing">
+                    
+                    <div class="stepsContainer">
+                        <p>praktycznie każdy program do obrówki filmów daje nam możliwość przyspieszenia ich, jest to ostatni, ale nie najmniej ważny element naszego procesu twórczego</p>
+                        <img src="images/app.svg" alt="camera" class="stepsImages">
+                    </div>
+    
+                    </div></div>
+                <div class="cloud" id="cloud6"><div class="cloudName">Alternatywna</div> <div class="cloud6 easing">
+                    
+                    <div class="stepsContainer">
+                        <p>każdy film jest zestawieniem pojedyńczych zdjęć- timelaps jest przyspieszonym nagraniem, zatem na każdą rzeczywistą minutę potrzebujemy mniejszą ilość zdjęć.</p>
+                        <img src="images/alternative.svg" alt="camera" class="stepsImages">
+                    </div>
+    
+                    </div></div>
+                
+        </article>
+    </section>
+<!-- THIRD SECTION - TIMELAPSE GALERY -->
+    <section id="timelapseGalery">
+        <div class="actualTimelapse">
+            <div class="timelapseContainer">
+                <div class="previousTimelapse previousTimelapseOn">&#9204;</div>
+                    <div class="timelapses">
+        <video src="images/tajmlapsy/timelapse1.mp4" class="timelapse"></video>
+        <video src="images/tajmlapsy/timelapse2.mp4" class="timelapse"></video>
+        <video src="images/tajmlapsy/timelapse3.mp4" class="timelapse"></video>
+        <video src="images/tajmlapsy/timelapse4.mp4" class="timelapse"></video>
+        <video src="images/tajmlapsy/timelapse5.mp4" class="timelapse"></video>
+        <video src="images/tajmlapsy/timelapse6.mp4" class="timelapse"></video>
+        <video src="images/tajmlapsy/timelapse7.mp4" class="timelapse"></video>
+        <video src="images/tajmlapsy/timelapse8.mp4" class="timelapse"></video>
+    </div>
+        <div class="nextTimelapse">&#9205;</div>
+        </div>
+    </div>
+    </section>
+<!-- FOOTER -->
+    <footer>
+        <p>Created by Mansh.</p>
+        <p>All clouds timelapses was taken by me.</p>
+        <p>Cloud photos owners not included</p>
+        <p>For educational purpose only</p>
+        <form action="contact.txt" method="post">
+            <fieldset>
+            <legend>Leave your contact informations here, I will catch you someday.</legend>
+            <span class="phone"> <label for="contactPhone">Phone number:</label> <input type="tel" name="contactPhone" placeholder="000-000-000"><input type="submit" value="Submit" name="sendPhoneNumber"></span> <br>
+            <span class="email"> <label for="contactEmail">Email adress:</label> <input type="mail" name="contactEmail" id="contactEmail" placeholder="example@domain.org"><input type="submit" value="Submit" name="sendEmailAdress"></span> <br>
+            <a href="mailto:alan.k4@wp.pl"><input type="button" name="mailsend" value="Or send me an email"></a>
+        </fieldset>
+        </form>
+    </footer>
+</body>
+</html>
