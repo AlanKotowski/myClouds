@@ -20,7 +20,6 @@ html {
           backdrop-filter: blur(4px);
   border-radius: 50px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background-color: lightblue;
 }
@@ -32,11 +31,10 @@ html {
   background: rgba(104, 103, 103, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  width: calc((100% - 185px));
+  width: calc(100% - 185px);
   height: 30px;
   top: 0px;
 }
-
 .pageNavigation .logo {
   position: relative;
   top: 0px;
@@ -44,105 +42,56 @@ html {
   z-index: 10;
   width: 100px;
 }
-
 .pageNavigation .logo #logoLink {
   text-decoration: none;
   color: white;
 }
-
 .pageNavigation .logo #logoLink:hover {
   text-shadow: 5px 5px 5px 15px black;
 }
-
 .pageNavigation .menuWrapper {
   position: absolute;
   bottom: 0px;
   right: -185px;
   width: 185px;
-  -webkit-transition: 2s;
   transition: 2s;
 }
-
 .pageNavigation .menuWrapper ul {
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-
 .pageNavigation .menuWrapper ul .timelapseDIYList .timelapseTriangle {
   margin-top: -15px;
   margin-bottom: -5px;
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
-  -webkit-animation: timelapseDIYDropdown 1s infinite;
-          animation: timelapseDIYDropdown 1s infinite;
+  transform: rotateZ(180deg);
+  animation: timelapseDIYDropdown 1s infinite;
 }
-
-@-webkit-keyframes timelapseDIYDropdown {
-  0% {
-    -webkit-transform: translateY(-2px) rotateZ(180deg);
-            transform: translateY(-2px) rotateZ(180deg);
-  }
-  50% {
-    -webkit-transform: translateY(2px) rotateZ(180deg);
-            transform: translateY(2px) rotateZ(180deg);
-  }
-  100% {
-    -webkit-transform: translateY(-2px) rotateZ(180deg);
-            transform: translateY(-2px) rotateZ(180deg);
-  }
-}
-
 @keyframes timelapseDIYDropdown {
   0% {
-    -webkit-transform: translateY(-2px) rotateZ(180deg);
-            transform: translateY(-2px) rotateZ(180deg);
+    transform: translateY(-2px) rotateZ(180deg);
   }
   50% {
-    -webkit-transform: translateY(2px) rotateZ(180deg);
-            transform: translateY(2px) rotateZ(180deg);
+    transform: translateY(2px) rotateZ(180deg);
   }
   100% {
-    -webkit-transform: translateY(-2px) rotateZ(180deg);
-            transform: translateY(-2px) rotateZ(180deg);
+    transform: translateY(-2px) rotateZ(180deg);
   }
 }
-
 .pageNavigation .menuWrapper ul .timelapseDIYList .timelapseTriangleOn {
-  -webkit-animation: timelapseDIYDropdownOn 1s infinite;
-          animation: timelapseDIYDropdownOn 1s infinite;
+  animation: timelapseDIYDropdownOn 1s infinite;
 }
-
-@-webkit-keyframes timelapseDIYDropdownOn {
-  0% {
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
-  }
-  50% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
-  }
-  100% {
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
-  }
-}
-
 @keyframes timelapseDIYDropdownOn {
   0% {
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
   }
   50% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    transform: translateY(2px);
   }
   100% {
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
   }
 }
-
 .pageNavigation .menuWrapper ul a {
   position: relative;
   width: 100%;
@@ -153,18 +102,15 @@ html {
   display: block;
   text-decoration: none;
 }
-
 .pageNavigation .menuWrapper ul a li {
   list-style-type: none;
   color: black;
 }
-
 .pageNavigation .menuWrapper ul a li:hover {
   background: rgba(104, 103, 103, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-
 .pageNavigation .menuWrapper ul li {
   list-style-type: none;
   color: black;
@@ -173,21 +119,17 @@ html {
   width: 100%;
   overflow: hidden;
 }
-
 .pageNavigation .menuWrapper ul li:hover {
   cursor: pointer;
 }
-
 .pageNavigation .menuWrapper ul li .timelapseDIY {
   margin: 0;
   position: relative;
   display: none;
 }
-
 .pageNavigation .menuWrapper ul li .timelapseDIYOn {
   display: block;
 }
-
 .pageNavigation .menuWrapper .loginForm {
   text-align: center;
   margin: 0px 0px;
@@ -197,16 +139,13 @@ html {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-
 .pageNavigation .menuWrapper .loginForm .buttonsSpace {
   font-size: 10px;
   margin: 10px 0px;
 }
-
 .pageNavigation .menuWrapper .loginForm .buttonsSpace .submitCredentials:hover, .pageNavigation .menuWrapper .loginForm .buttonsSpace .createAccountButton:hover {
   cursor: pointer;
 }
-
 .pageNavigation .menuWrapper .colorSpace {
   position: relative;
   bottom: 0px;
@@ -216,7 +155,6 @@ html {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-
 .pageNavigation .menuWrapper .colorSpace .burgerMenu {
   border: none;
   background-color: rgba(0, 0, 0, 0);
@@ -224,51 +162,35 @@ html {
   top: 1px;
   right: 10px;
 }
-
 .pageNavigation .menuWrapper .colorSpace .burgerMenu:hover {
   cursor: pointer;
 }
-
 .pageNavigation .menuWrapper .colorSpace .burgerMenu:hover .line {
   background-color: lightblue;
 }
-
 .pageNavigation .menuWrapper .colorSpace .burgerMenu .line {
   position: relative;
   width: 25px;
   height: 4px;
   margin: 4px 0px;
   background-color: white;
-  -webkit-transition: 2s;
   transition: 2s;
 }
-
 .pageNavigation .menuWrapperOn {
-  -webkit-transition: 2s;
   transition: 2s;
-  -webkit-transform: translateY(calc(100% - 30px));
-          transform: translateY(calc(100% - 30px));
+  transform: translateY(calc(100% - 30px));
 }
-
 .pageNavigation .menuWrapperOn .burgerMenu #line1 {
-  -webkit-transition: 2s;
   transition: 2s;
-  -webkit-transform: translate(2px, 8px) rotate(45deg);
-          transform: translate(2px, 8px) rotate(45deg);
+  transform: translate(2px, 8px) rotate(45deg);
 }
-
 .pageNavigation .menuWrapperOn .burgerMenu #line2 {
-  -webkit-transition: 2s;
   transition: 2s;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
 }
-
 .pageNavigation .menuWrapperOn .burgerMenu #line3 {
-  -webkit-transition: 2s;
   transition: 2s;
-  -webkit-transform: translate(2px, -8px) rotate(-45deg);
-          transform: translate(2px, -8px) rotate(-45deg);
+  transform: translate(2px, -8px) rotate(-45deg);
 }
 
 @media screen and (max-width: 800px) {
@@ -283,7 +205,6 @@ html {
     background-color: rgba(0, 0, 0, 0);
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
-    -webkit-transition: 2s;
     transition: 2s;
   }
   .pageNavigation .menuWrapper ul .timelapseDIYList {
@@ -325,7 +246,6 @@ html {
     background-color: rgba(0, 0, 0, 0);
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
-    -webkit-transition: 2s;
     transition: 2s;
   }
   .pageNavigation .menuWrapper .colorSpace .burgerMenu {
@@ -336,44 +256,33 @@ html {
     background: rgba(255, 255, 255, 0.6);
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
-    -webkit-transition: 2s;
     transition: 2s;
   }
   .pageNavigation .menuWrapperOn .colorSpace {
     background: rgba(104, 103, 103, 0.6);
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
-    -webkit-transition: 2s;
     transition: 2s;
   }
 }
-
 .videoBackground {
-  height: 100vh;
+  width: 100%;
   overflow: hidden;
 }
-
 .videoBackground .videoBg {
-  position: relative;
   background-position: center center;
   z-index: -100;
-}
-
-.videoBackground .whiteWindow {
-  position: absolute;
-  bottom: 0px;
-  z-index: 1;
   width: 100%;
 }
 
 .intro {
   position: relative;
 }
-
 .intro .cloudsStaring {
   width: 100%;
+  height: 100vh;
+  position: relative;
 }
-
 .intro .headerIntro {
   position: absolute;
   direction: rtl;
@@ -383,7 +292,6 @@ html {
   font-size: 2.6em;
   font-weight: 600;
 }
-
 .intro h1 {
   position: absolute;
   direction: ltr;
@@ -403,22 +311,22 @@ html {
     top: 65%;
   }
 }
-
 @media screen and (max-width: 800px) {
   .videoBackground .videoBg {
-    margin-left: -50%;
+    height: 100vh;
+    min-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .intro {
     overflow-x: hidden;
   }
   .intro .cloudsStaring {
     height: 100vh;
-    width: auto;
-    left: 50%;
   }
   .intro .headerIntro {
     font-size: 16px;
-    top: 90px;
+    top: 10%;
     right: 10%;
     width: 80%;
   }
@@ -429,24 +337,23 @@ html {
     width: 80%;
   }
 }
-
 #timelapseDIY header {
   margin-bottom: -110px;
 }
-
 #timelapseDIY header .brain {
   width: 100%;
   margin-top: -150px;
   position: relative;
   margin-bottom: -110px;
 }
-
 #timelapseDIY header h1 {
   font-size: 2.8rem;
   position: relative;
   top: -220px;
-  color: white;
+  color: black;
   text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 @media screen and (max-width: 900px) {
@@ -465,10 +372,9 @@ html {
     top: -320px;
     color: white;
     text-align: center;
-    text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black;
   }
 }
-
 #cloud1 {
   height: 100vh;
   width: 100%;
@@ -480,7 +386,6 @@ html {
   background-size: cover;
   background-image: url("images/cloud1.jpg");
 }
-
 #cloud1 .cloudName {
   position: relative;
   text-align: center;
@@ -505,7 +410,6 @@ html {
   background-size: cover;
   background-image: url("images/cloud2.jpg");
 }
-
 #cloud2 .cloudName {
   position: relative;
   text-align: center;
@@ -530,7 +434,6 @@ html {
   background-size: cover;
   background-image: url("images/cloud3.jpg");
 }
-
 #cloud3 .cloudName {
   position: relative;
   text-align: center;
@@ -555,7 +458,6 @@ html {
   background-size: cover;
   background-image: url("images/cloud4.jpg");
 }
-
 #cloud4 .cloudName {
   position: relative;
   text-align: center;
@@ -580,7 +482,6 @@ html {
   background-size: cover;
   background-image: url("images/cloud5.jpg");
 }
-
 #cloud5 .cloudName {
   position: relative;
   text-align: center;
@@ -605,7 +506,6 @@ html {
   background-size: cover;
   background-image: url("images/cloud6.jpg");
 }
-
 #cloud6 .cloudName {
   position: relative;
   text-align: center;
@@ -627,13 +527,11 @@ html {
   color: black;
   font-size: 35px;
   opacity: 0;
-  -webkit-transition: 1s;
   transition: 1s;
   line-height: 100vh;
   text-align: center;
   left: 10%;
 }
-
 .cloud1 .stepsContainer, .easingOn .stepsContainer {
   position: relative;
   margin: 0 25%;
@@ -643,18 +541,11 @@ html {
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
-
 .cloud1 .stepsContainer p, .easingOn .stepsContainer p {
   position: relative;
   font-size: 20px;
@@ -663,20 +554,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .cloud1 .stepsContainer .stepsImages, .easingOn .stepsContainer .stepsImages {
   position: relative;
   padding: 50px 50px 50px 50px;
   width: 200px;
 }
-
 @media screen and (max-width: 800px) {
   .cloud1 .stepsContainer, .easingOn .stepsContainer {
     position: relative;
@@ -685,13 +570,8 @@ html {
     left: -10%;
     margin: 0 10% 0 10%;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .cloud1 .stepsContainer p, .easingOn .stepsContainer p {
     width: 80%;
@@ -712,13 +592,11 @@ html {
   color: black;
   font-size: 35px;
   opacity: 0;
-  -webkit-transition: 1s;
   transition: 1s;
   line-height: 100vh;
   text-align: center;
   left: 10%;
 }
-
 .cloud2 .stepsContainer {
   position: relative;
   margin: 0 25%;
@@ -728,18 +606,11 @@ html {
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
-
 .cloud2 .stepsContainer p {
   position: relative;
   font-size: 20px;
@@ -748,20 +619,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .cloud2 .stepsContainer .stepsImages {
   position: relative;
   padding: 50px 50px 50px 50px;
   width: 200px;
 }
-
 @media screen and (max-width: 800px) {
   .cloud2 .stepsContainer {
     position: relative;
@@ -770,13 +635,8 @@ html {
     left: -10%;
     margin: 0 10% 0 10%;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .cloud2 .stepsContainer p {
     width: 80%;
@@ -797,13 +657,11 @@ html {
   color: black;
   font-size: 35px;
   opacity: 0;
-  -webkit-transition: 1s;
   transition: 1s;
   line-height: 100vh;
   text-align: center;
   left: 10%;
 }
-
 .cloud3 .stepsContainer {
   position: relative;
   margin: 0 25%;
@@ -813,18 +671,11 @@ html {
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
-
 .cloud3 .stepsContainer p {
   position: relative;
   font-size: 20px;
@@ -833,20 +684,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .cloud3 .stepsContainer .stepsImages {
   position: relative;
   padding: 50px 50px 50px 50px;
   width: 200px;
 }
-
 @media screen and (max-width: 800px) {
   .cloud3 .stepsContainer {
     position: relative;
@@ -855,13 +700,8 @@ html {
     left: -10%;
     margin: 0 10% 0 10%;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .cloud3 .stepsContainer p {
     width: 80%;
@@ -882,13 +722,11 @@ html {
   color: black;
   font-size: 35px;
   opacity: 0;
-  -webkit-transition: 1s;
   transition: 1s;
   line-height: 100vh;
   text-align: center;
   left: 10%;
 }
-
 .cloud4 .stepsContainer {
   position: relative;
   margin: 0 25%;
@@ -898,18 +736,11 @@ html {
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
-
 .cloud4 .stepsContainer p {
   position: relative;
   font-size: 20px;
@@ -918,20 +749,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .cloud4 .stepsContainer .stepsImages {
   position: relative;
   padding: 50px 50px 50px 50px;
   width: 200px;
 }
-
 @media screen and (max-width: 800px) {
   .cloud4 .stepsContainer {
     position: relative;
@@ -940,13 +765,8 @@ html {
     left: -10%;
     margin: 0 10% 0 10%;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .cloud4 .stepsContainer p {
     width: 80%;
@@ -967,13 +787,11 @@ html {
   color: black;
   font-size: 35px;
   opacity: 0;
-  -webkit-transition: 1s;
   transition: 1s;
   line-height: 100vh;
   text-align: center;
   left: 10%;
 }
-
 .cloud5 .stepsContainer {
   position: relative;
   margin: 0 25%;
@@ -983,18 +801,11 @@ html {
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
-
 .cloud5 .stepsContainer p {
   position: relative;
   font-size: 20px;
@@ -1003,20 +814,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .cloud5 .stepsContainer .stepsImages {
   position: relative;
   padding: 50px 50px 50px 50px;
   width: 200px;
 }
-
 @media screen and (max-width: 800px) {
   .cloud5 .stepsContainer {
     position: relative;
@@ -1025,13 +830,8 @@ html {
     left: -10%;
     margin: 0 10% 0 10%;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .cloud5 .stepsContainer p {
     width: 80%;
@@ -1052,13 +852,11 @@ html {
   color: black;
   font-size: 35px;
   opacity: 0;
-  -webkit-transition: 1s;
   transition: 1s;
   line-height: 100vh;
   text-align: center;
   left: 10%;
 }
-
 .cloud6 .stepsContainer {
   position: relative;
   margin: 0 25%;
@@ -1068,18 +866,11 @@ html {
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
-
 .cloud6 .stepsContainer p {
   position: relative;
   font-size: 20px;
@@ -1088,20 +879,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .cloud6 .stepsContainer .stepsImages {
   position: relative;
   padding: 50px 50px 50px 50px;
   width: 200px;
 }
-
 @media screen and (max-width: 800px) {
   .cloud6 .stepsContainer {
     position: relative;
@@ -1110,13 +895,8 @@ html {
     left: -10%;
     margin: 0 10% 0 10%;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .cloud6 .stepsContainer p {
     width: 80%;
@@ -1132,12 +912,10 @@ html {
 .easingOn {
   width: 110%;
   left: -15%;
-  -webkit-transition: 2s;
   transition: 2s;
   visibility: visible;
   opacity: 1;
 }
-
 @media screen and (max-width: 800px) {
   .easingOn {
     left: -10%;
@@ -1147,29 +925,20 @@ html {
 #timelapseGalery {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   background-color: lightgrey;
 }
-
 #timelapseGalery .actualTimelapse {
   position: relative;
   width: 60%;
   margin-top: -10%;
 }
-
 #timelapseGalery .actualTimelapse video {
   width: 100%;
 }
-
 #timelapseGalery .timelapseContainer {
   position: absolute;
   top: 100%;
@@ -1180,13 +949,10 @@ html {
   margin-left: 0px;
   margin-top: 1%;
 }
-
 #timelapseGalery .timelapseContainer .timelapses {
   width: 200%;
-  -webkit-transition: 2s;
   transition: 2s;
 }
-
 #timelapseGalery .timelapseContainer .timelapses .timelapse {
   position: relative;
   width: 12%;
@@ -1194,18 +960,13 @@ html {
   display: inline-block;
   margin: 2px 0 0 0;
 }
-
 #timelapseGalery .timelapseContainer .timelapses .timelapse:hover {
   cursor: pointer;
 }
-
 #timelapseGalery .timelapseContainer .timelapsesOn {
-  -webkit-transition: 2s;
   transition: 2s;
-  -webkit-transform: translateX(-48%);
-          transform: translateX(-48%);
+  transform: translateX(-48%);
 }
-
 #timelapseGalery .timelapseContainer .previousTimelapse {
   position: absolute;
   width: 15px;
@@ -1215,34 +976,24 @@ html {
   background-color: white;
   z-index: 1;
   text-align: center;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   border-radius: 5px 0px 0px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   bottom: 2px;
 }
-
 #timelapseGalery .timelapseContainer .previousTimelapse:hover {
   cursor: pointer;
   background-color: lightgrey;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 #timelapseGalery .timelapseContainer .previousTimelapseOn {
   background-color: grey;
 }
-
 #timelapseGalery .timelapseContainer .previousTimelapseOn:hover {
   cursor: default;
   background-color: grey;
 }
-
 #timelapseGalery .timelapseContainer .nextTimelapse {
   position: absolute;
   width: 15px;
@@ -1252,30 +1003,21 @@ html {
   background-color: white;
   z-index: 10;
   text-align: center;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   border-radius: 0px 5px 5px 0px;
   bottom: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   right: 0%;
 }
-
 #timelapseGalery .timelapseContainer .nextTimelapse:hover {
   cursor: pointer;
   background-color: lightgrey;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 #timelapseGalery .timelapseContainer .nextTimelapseOn {
   background-color: grey;
 }
-
 #timelapseGalery .timelapseContainer .nextTimelapseOn:hover {
   cursor: default;
   background-color: grey;
@@ -1294,29 +1036,22 @@ html {
     margin: 0%;
   }
   #timelapseGalery .actualTimelapse .timelapsesOn {
-    -webkit-transition: 2s;
     transition: 2s;
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
+    transform: translateX(-40%);
   }
 }
-
 footer {
   margin: 30px;
 }
-
 footer p {
   text-align: center;
 }
-
 footer form legend {
   padding: 15px;
 }
-
 footer form fieldset {
   padding: 10px;
 }
-
 footer form fieldset span {
   margin-bottom: 15px;
 }
@@ -1328,25 +1063,20 @@ footer form fieldset span {
   min-height: 400px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-
 .registry .registryForm {
   position: relative;
   top: 15px;
 }
-
 .registry .registryForm fieldset {
   border: none;
 }
-
 .registry .registryForm fieldset legend {
   padding: 0 5px 0 5px;
   color: black;
@@ -1354,16 +1084,13 @@ footer form fieldset span {
   border-bottom: 1px solid grey;
   width: 96%;
 }
-
 .registry .registryForm fieldset legend h1 {
   font-size: 24px;
 }
-
 .registry .registryForm fieldset legend h3 {
   margin-top: -2px;
   font-size: 12px;
 }
-
 .registry .registryForm fieldset #newName {
   position: relative;
   width: 47%;
@@ -1373,7 +1100,6 @@ footer form fieldset span {
   border: 1px solid grey;
   padding-left: 3px;
 }
-
 .registry .registryForm fieldset #newSurname {
   position: relative;
   width: 47%;
@@ -1383,7 +1109,6 @@ footer form fieldset span {
   border: 1px solid grey;
   padding-left: 3px;
 }
-
 .registry .registryForm fieldset #newContact {
   width: 97%;
   margin: 5px 1px 5px 1px;
@@ -1391,7 +1116,6 @@ footer form fieldset span {
   border: 1px solid grey;
   padding-left: 3px;
 }
-
 .registry .registryForm fieldset #newPassword {
   width: 97%;
   margin: 5px 1px 5px 1px;
@@ -1399,40 +1123,32 @@ footer form fieldset span {
   border: 1px solid grey;
   padding-left: 3px;
 }
-
 .registry .registryForm fieldset .birth {
   width: 100%;
   height: 50px;
   margin-left: 2px;
 }
-
 .registry .registryForm fieldset .birth p {
   font-size: 18px;
   margin: 2px;
 }
-
 .registry .registryForm fieldset .birth #birthDay {
   width: 32%;
 }
-
 .registry .registryForm fieldset .birth #birthMonth {
   width: 32%;
 }
-
 .registry .registryForm fieldset .birth #birthYear {
   width: 32%;
 }
-
 .registry .registryForm fieldset .sex {
   width: 100%;
   height: 50px;
 }
-
 .registry .registryForm fieldset .sex p {
   font-size: 18px;
   margin: 2px;
 }
-
 .registry .registryForm fieldset .sex .inputs {
   width: 30%;
   margin: 0 1%;
@@ -1441,43 +1157,35 @@ footer form fieldset span {
   float: left;
   height: 20px;
 }
-
 .registry .registryForm fieldset .sex .inputs:active {
   background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-
 .registry .registryForm fieldset .sex .inputs input {
   margin: 3px;
   display: block;
 }
-
 .registry .registryForm fieldset .sex .inputs label {
   display: block;
   margin-top: -18px;
   text-align: center;
 }
-
 .registry .registryForm fieldset .sex .inputs label:hover {
   cursor: pointer;
 }
-
 .registry p {
   margin: 5px;
 }
-
 .registry #registryButton {
   position: relative;
   width: 80%;
   margin: 0 10%;
   bottom: -5px;
   border-radius: 15px;
-  background: #fbe173;
-  background: -webkit-gradient(linear, left top, right top, from(#fbe173), color-stop(25%, white), color-stop(75%, white), to(#fbe173));
-  background: linear-gradient(90deg, #fbe173 0%, white 25%, white 75%, #fbe173 100%);
+  background: rgb(251, 225, 115);
+  background: linear-gradient(90deg, rgb(251, 225, 115) 0%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 75%, rgb(251, 225, 115) 100%);
 }
-
 .registry #registryButton:hover {
   cursor: pointer;
 }
@@ -1501,7 +1209,6 @@ footer form fieldset span {
     font-size: 16px;
   }
 }
-
 .registryBackground {
   position: absolute;
   width: 100%;
@@ -1509,5 +1216,4 @@ footer form fieldset span {
   z-index: -10;
   overflow: hidden;
   background: url("images/registry.jpg") no-repeat center;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
