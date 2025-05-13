@@ -10,7 +10,9 @@ $wrapperTranslate: calc(5 * 50px);
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 html{
     scroll-behavior: smooth;
@@ -390,7 +392,7 @@ top: 0px;
         text-align: center;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
-    }
+        
 }
 }
 
@@ -443,7 +445,10 @@ top: 0px;
             color: white;
             background-color: black;
             opacity: 0.8;
-            
+            font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    }
         }
         }
     }
@@ -489,6 +494,9 @@ top: 0px;
                     padding: 50px;
                     display: flex;
                     align-items: center;
+                    font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
                 }
                 .stepsImages{
                     position: relative;
@@ -672,17 +680,26 @@ top: 0px;
 
     footer{
         margin: 30px;
+        
      p{
          text-align: center;
+         @include lightFont;
      }
      form{
+        
          legend{
              padding: 15px;
+              @include lightFont;
          }
          fieldset{
              padding: 10px;
+              @include lightFont;
              span{
                  margin-bottom: 15px;
+                  @include lightFont;
+             }
+             label, input, button{
+                 @include lightFont;
              }
          }
      }
@@ -702,6 +719,7 @@ top: 0px;
         border-radius: 10px;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
         @include lightWhiteGlassmorphism;
+        
         .registryForm{
             position: relative;
             top: 15px;

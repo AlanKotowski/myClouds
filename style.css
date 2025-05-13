@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html {
@@ -355,18 +358,17 @@ html {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
-
 @media screen and (max-width: 900px) {
-  #timelapseDIY {
+  #timelapseDIY #timelapseDIY {
     width: 100%;
   }
-  #timelapseDIY header .brain {
+  #timelapseDIY #timelapseDIY header .brain {
     height: 100vh;
     margin-top: -150px;
     position: relative;
     margin-bottom: -110px;
   }
-  #timelapseDIY header h1 {
+  #timelapseDIY #timelapseDIY header h1 {
     font-size: 25px;
     position: relative;
     top: -320px;
@@ -375,7 +377,7 @@ html {
     text-shadow: 1px 1px 2px black, -1px -1px 2px black;
   }
 }
-#cloud1 {
+#timelapseDIY #cloud1 {
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -386,7 +388,7 @@ html {
   background-size: cover;
   background-image: url("images/cloud1.jpg");
 }
-#cloud1 .cloudName {
+#timelapseDIY #cloud1 .cloudName {
   position: relative;
   text-align: center;
   top: 0;
@@ -397,9 +399,11 @@ html {
   color: white;
   background-color: black;
   opacity: 0.8;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-
-#cloud2 {
+#timelapseDIY #cloud2 {
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -410,7 +414,7 @@ html {
   background-size: cover;
   background-image: url("images/cloud2.jpg");
 }
-#cloud2 .cloudName {
+#timelapseDIY #cloud2 .cloudName {
   position: relative;
   text-align: center;
   top: 0;
@@ -421,9 +425,11 @@ html {
   color: white;
   background-color: black;
   opacity: 0.8;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-
-#cloud3 {
+#timelapseDIY #cloud3 {
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -434,7 +440,7 @@ html {
   background-size: cover;
   background-image: url("images/cloud3.jpg");
 }
-#cloud3 .cloudName {
+#timelapseDIY #cloud3 .cloudName {
   position: relative;
   text-align: center;
   top: 0;
@@ -445,9 +451,11 @@ html {
   color: white;
   background-color: black;
   opacity: 0.8;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-
-#cloud4 {
+#timelapseDIY #cloud4 {
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -458,7 +466,7 @@ html {
   background-size: cover;
   background-image: url("images/cloud4.jpg");
 }
-#cloud4 .cloudName {
+#timelapseDIY #cloud4 .cloudName {
   position: relative;
   text-align: center;
   top: 0;
@@ -469,9 +477,11 @@ html {
   color: white;
   background-color: black;
   opacity: 0.8;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-
-#cloud5 {
+#timelapseDIY #cloud5 {
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -482,7 +492,7 @@ html {
   background-size: cover;
   background-image: url("images/cloud5.jpg");
 }
-#cloud5 .cloudName {
+#timelapseDIY #cloud5 .cloudName {
   position: relative;
   text-align: center;
   top: 0;
@@ -493,9 +503,11 @@ html {
   color: white;
   background-color: black;
   opacity: 0.8;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-
-#cloud6 {
+#timelapseDIY #cloud6 {
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -506,7 +518,7 @@ html {
   background-size: cover;
   background-image: url("images/cloud6.jpg");
 }
-#cloud6 .cloudName {
+#timelapseDIY #cloud6 .cloudName {
   position: relative;
   text-align: center;
   top: 0;
@@ -517,6 +529,9 @@ html {
   color: white;
   background-color: black;
   opacity: 0.8;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .cloud1, .easingOn {
@@ -556,6 +571,9 @@ html {
   padding: 50px;
   display: flex;
   align-items: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .cloud1 .stepsContainer .stepsImages, .easingOn .stepsContainer .stepsImages {
   position: relative;
@@ -621,6 +639,9 @@ html {
   padding: 50px;
   display: flex;
   align-items: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .cloud2 .stepsContainer .stepsImages {
   position: relative;
@@ -686,6 +707,9 @@ html {
   padding: 50px;
   display: flex;
   align-items: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .cloud3 .stepsContainer .stepsImages {
   position: relative;
@@ -751,6 +775,9 @@ html {
   padding: 50px;
   display: flex;
   align-items: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .cloud4 .stepsContainer .stepsImages {
   position: relative;
@@ -816,6 +843,9 @@ html {
   padding: 50px;
   display: flex;
   align-items: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .cloud5 .stepsContainer .stepsImages {
   position: relative;
@@ -881,6 +911,9 @@ html {
   padding: 50px;
   display: flex;
   align-items: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .cloud6 .stepsContainer .stepsImages {
   position: relative;
@@ -1045,15 +1078,37 @@ footer {
 }
 footer p {
   text-align: center;
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 footer form legend {
   padding: 15px;
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 footer form fieldset {
   padding: 10px;
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 footer form fieldset span {
   margin-bottom: 15px;
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+footer form fieldset label, footer form fieldset input, footer form fieldset button {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .registry {
