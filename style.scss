@@ -43,6 +43,7 @@ display: inline-block;
 width: $menuWidth;
 height: 30px;
 top: 0px;
+@include kauchan;
 .logo{
     position: relative;
     top: 0px;
@@ -65,6 +66,7 @@ top: 0px;
     width: 185px;
     transition: 2s;
     ul{
+        
         @include lightWhiteGlassmorphism;
         .timelapseDIYList{
             .timelapseTriangle{
@@ -111,6 +113,7 @@ top: 0px;
             line-height: 30px;
             display: block;
             text-decoration: none;
+
             li{
                 list-style-type: none;
                 color: black;
@@ -127,6 +130,7 @@ top: 0px;
             text-align: center;
             width: 100%;
             overflow: hidden;
+            
             &:hover{
                 cursor: pointer;
                 
@@ -192,6 +196,9 @@ top: 0px;
 .menuWrapperOn{
     transition: 2s;
     transform: translateY($menuHeight);
+    li{
+        @include kauchan;
+    }
     .burgerMenu{
         #line1{
             transition: 2s;
@@ -252,9 +259,11 @@ top: 0px;
                         font-size: 22px;
                         padding-left: 10px;
                         margin: 4px 0px 4px 0px;
+                        
                     }
                     .login{
                         margin-left: 43px;
+                        @include lightFont;
                     }
                 }
                 .buttonsSpace{
@@ -379,20 +388,19 @@ top: 0px;
     header{
         margin-bottom: -110px;
     .brain{
-        width: 100%;
+        width: 100vh;
         margin-top: -150px;
         position: relative;
         margin-bottom: -110px;
     }
     h1{
-        font-size: 2.8rem;
-        position: relative;
-        top: -220px;
-        color: black;
-        text-align: center;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: white;
-        
+    font-size: 2.8rem;
+    position: relative;
+    top: -70vh;
+    color: black;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 }
 
@@ -494,9 +502,7 @@ top: 0px;
                     padding: 50px;
                     display: flex;
                     align-items: center;
-                    font-family: "Kaushan Script", cursive;
-  font-weight: 400;
-  font-style: normal;
+                    @include kaushan;
                 }
                 .stepsImages{
                     position: relative;

@@ -237,6 +237,10 @@ html {
   }
   .pageNavigation .menuWrapper .loginForm .loginSpace .login, .pageNavigation .menuWrapper .loginForm .passwordSpace .login {
     margin-left: 43px;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
   .pageNavigation .menuWrapper .loginForm .buttonsSpace {
     font-size: 18px;
@@ -288,7 +292,7 @@ html {
 }
 .intro .headerIntro {
   position: absolute;
-  direction: rtl;
+  
   top: 150px;
   right: 150px;
   width: 60%;
@@ -341,42 +345,69 @@ html {
   }
 }
 #timelapseDIY header {
-  margin-bottom: -110px;
+  margin-top: -6%;
+  height: 100vh;
 }
 #timelapseDIY header .brain {
-  width: 100%;
-  margin-top: -150px;
+  height: 100vh;
   position: relative;
-  margin-bottom: -110px;
+  width: 100%;
+  /* margin-top: -10%; */
 }
 #timelapseDIY header h1 {
+z-index: 1;
   font-size: 2.8rem;
   position: relative;
-  top: -220px;
+  top: -80%;
   color: black;
   text-align: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
+
+#timelapseDIY header p {
+  z-index: 1;
+  font-size: 2rem;
+  position: relative;
+  top: -35%;
+  color: black;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
 @media screen and (max-width: 900px) {
-  #timelapseDIY #timelapseDIY {
+  #timelapseDIY {
     width: 100%;
   }
-  #timelapseDIY #timelapseDIY header .brain {
+  #timelapseDIY header .brain {
     height: 100vh;
     margin-top: -150px;
     position: relative;
     margin-bottom: -110px;
   }
-  #timelapseDIY #timelapseDIY header h1 {
+  #timelapseDIY header h1 {
     font-size: 25px;
     position: relative;
-    top: -320px;
+    /* top: -320px; */
     color: white;
     text-align: center;
     text-shadow: 1px 1px 2px black, -1px -1px 2px black;
   }
 }
+
+ .stepsContainer {
+  width: 50% !important;
+  height: 30% !important;
+  border: 3px solid gray;
+  border-radius: 20px !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+}
+
+
+
 #timelapseDIY #cloud1 {
   height: 100vh;
   width: 100%;
@@ -959,11 +990,19 @@ html {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   background-color: lightgrey;
 }
+
+#timelapseGalery .opisInfo {
+ position: absolute;
+ margin-TOP: -55%;
+ text-align: center;
+}
+
 #timelapseGalery .actualTimelapse {
   position: relative;
   width: 60%;
