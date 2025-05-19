@@ -10,6 +10,16 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3 {
+  font-family: "Quicksand";
+  font-size: 2.8rem;
+}
+
+p{
+font-family: "Quicksand";
+font-size: 2rem;
+}
+
 ::-webkit-scrollbar {
   background: rgba(104, 103, 103, 0.6);
   -webkit-backdrop-filter: blur(4px);
@@ -40,7 +50,7 @@ html {
 }
 .pageNavigation .logo {
   position: relative;
-  top: 0px;
+  top: -24px;
   left: 5px;
   z-index: 10;
   width: 100px;
@@ -48,6 +58,8 @@ html {
 .pageNavigation .logo #logoLink {
   text-decoration: none;
   color: white;
+  font-family: "Pacifico";
+  font-size: 20px;
 }
 .pageNavigation .logo #logoLink:hover {
   text-shadow: 5px 5px 5px 15px black;
@@ -65,11 +77,12 @@ html {
           backdrop-filter: blur(4px);
 }
 .pageNavigation .menuWrapper ul .timelapseDIYList .timelapseTriangle {
-  margin-top: -15px;
-  margin-bottom: -5px;
+  margin-top: -2px;
+  margin-bottom: 2px;
   transform: rotateZ(180deg);
   animation: timelapseDIYDropdown 1s infinite;
 }
+
 @keyframes timelapseDIYDropdown {
   0% {
     transform: translateY(-2px) rotateZ(180deg);
@@ -336,12 +349,14 @@ html {
     top: 10%;
     right: 10%;
     width: 80%;
+    font-family: Quicksand;
   }
   .intro h1 {
     font-size: 12px;
     left: 10%;
     bottom: 10%;
     width: 80%;
+    font-family: Quicksand;
   }
 }
 #timelapseDIY header {
@@ -363,6 +378,7 @@ z-index: 1;
   text-align: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+  font-family: Quicksand;
 }
 
 #timelapseDIY header p {
@@ -976,7 +992,7 @@ z-index: 1;
 .easingOn {
   width: 110%;
   left: -15%;
-  transition: 2s;
+  transition: 1s;
   visibility: visible;
   opacity: 1;
 }
@@ -990,6 +1006,7 @@ z-index: 1;
   width: 100%;
   height: 100vh;
   display: flex;
+  padding-top: 5%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -999,7 +1016,7 @@ z-index: 1;
 
 #timelapseGalery .opisInfo {
  position: absolute;
- margin-TOP: -55%;
+ margin-TOP: -50%;
  text-align: center;
 }
 
@@ -1117,43 +1134,47 @@ footer {
 }
 footer p {
   text-align: center;
-  font-family: "Playwrite DK Loopet", cursive;
+  font-family: "Quicksand", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 13px;
 }
 footer form legend {
   padding: 15px;
-  font-family: "Playwrite DK Loopet", cursive;
+  font-family: "Quicksand", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 footer form fieldset {
   padding: 10px;
-  font-family: "Playwrite DK Loopet", cursive;
+  font-family: "Quicksand", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 footer form fieldset span {
   margin-bottom: 15px;
-  font-family: "Playwrite DK Loopet", cursive;
+  font-family: "Quicksand", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 footer form fieldset label, footer form fieldset input, footer form fieldset button {
-  font-family: "Playwrite DK Loopet", cursive;
+  font-family: "Quicksand", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 .registry {
   position: absolute;
-  min-width: 220px;
-  max-width: 350px;
+  min-width: 620px;
+  /* max-width: 350px; */
   min-height: 400px;
   top: 50%;
   left: 50%;
@@ -1165,8 +1186,10 @@ footer form fieldset label, footer form fieldset input, footer form fieldset but
           backdrop-filter: blur(4px);
 }
 .registry .registryForm {
+  /* width: 60%; */
   position: relative;
   top: 15px;
+  padding: 5%;
 }
 .registry .registryForm fieldset {
   border: none;
@@ -1197,7 +1220,7 @@ footer form fieldset label, footer form fieldset input, footer form fieldset but
 .registry .registryForm fieldset #newSurname {
   position: relative;
   width: 47%;
-  margin: 5px 1px 5px 1px;
+  margin: 5px 1px 5px 10px;
   float: left;
   height: 25px;
   border: 1px solid grey;
@@ -1274,7 +1297,8 @@ footer form fieldset label, footer form fieldset input, footer form fieldset but
 .registry #registryButton {
   position: relative;
   width: 80%;
-  margin: 0 10%;
+  height: 30px;
+  margin: 10% 10%;
   bottom: -5px;
   border-radius: 15px;
   background: rgb(251, 225, 115);
@@ -1310,4 +1334,5 @@ footer form fieldset label, footer form fieldset input, footer form fieldset but
   z-index: -10;
   overflow: hidden;
   background: url("images/registry.jpg") no-repeat center;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
