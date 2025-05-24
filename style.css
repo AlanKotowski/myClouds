@@ -4,6 +4,11 @@
   font-family: "Fascinate Inline", system-ui;
   font-weight: 400;
   font-style: normal;
+  
+}
+
+body{
+  width: 100vw;
 }
 
 html {
@@ -211,7 +216,7 @@ font-size: 2rem;
 
 @media screen and (max-width: 800px) {
   .pageNavigation {
-    width: 100%;
+    width: 100vw;
   }
   .pageNavigation .menuWrapper {
     position: absolute;
@@ -225,10 +230,10 @@ font-size: 2rem;
   }
   .pageNavigation .menuWrapper ul .timelapseDIYList {
     line-height: 50px;
-    font-size: 30px;
+    font-size: 20px;
   }
   .pageNavigation .menuWrapper ul .timelapseDIYList ul a li {
-    font-size: 20px;
+    font-size: 12px;
   }
   .pageNavigation .menuWrapper ul a {
     height: 50px;
@@ -236,15 +241,15 @@ font-size: 2rem;
   .pageNavigation .menuWrapper ul a li {
     position: relative;
     line-height: 50px;
-    font-size: 30px;
+    font-size: 16px;
   }
   .pageNavigation .menuWrapper .loginForm .loginSpace, .pageNavigation .menuWrapper .loginForm .passwordSpace {
-    font-size: 30px;
+    font-size: 16px;
   }
   .pageNavigation .menuWrapper .loginForm .loginSpace .login, .pageNavigation .menuWrapper .loginForm .loginSpace .password, .pageNavigation .menuWrapper .loginForm .passwordSpace .login, .pageNavigation .menuWrapper .loginForm .passwordSpace .password {
     width: 250px;
     height: 35px;
-    font-size: 22px;
+    font-size: 16px;
     padding-left: 10px;
     margin: 4px 0px 4px 0px;
   }
@@ -256,10 +261,10 @@ font-size: 2rem;
     font-style: normal;
   }
   .pageNavigation .menuWrapper .loginForm .buttonsSpace {
-    font-size: 18px;
+    font-size: 16px;
   }
   .pageNavigation .menuWrapper .loginForm .buttonsSpace .submitCredentials, .pageNavigation .menuWrapper .loginForm .buttonsSpace .createAccountButton {
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px;
   }
   .pageNavigation .menuWrapper .colorSpace {
@@ -345,17 +350,19 @@ font-size: 2rem;
     height: 100vh;
   }
   .intro .headerIntro {
-    font-size: 16px;
+    font-size: 20px;
     top: 10%;
     right: 10%;
     width: 80%;
     font-family: Quicksand;
+    color: black;
+    text-shadow: 0px 0px 13px rgba(255, 255, 255, 1);
   }
   .intro h1 {
     font-size: 12px;
     left: 10%;
     bottom: 10%;
-    width: 80%;
+    /* width: 80%; */
     font-family: Quicksand;
   }
 }
@@ -398,14 +405,22 @@ z-index: 1;
   }
   #timelapseDIY header .brain {
     height: 100vh;
-    margin-top: -150px;
+    margin-top: -15%;
     position: relative;
     margin-bottom: -110px;
+    object-fit: cover;
   }
   #timelapseDIY header h1 {
-    font-size: 25px;
+    font-size: 16px;
     position: relative;
-    /* top: -320px; */
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+  }
+  #timelapseDIY header p {
+    font-size: 16px;
+    position: relative;
+    top: -60px;
     color: white;
     text-align: center;
     text-shadow: 1px 1px 2px black, -1px -1px 2px black;
@@ -630,13 +645,14 @@ z-index: 1;
 @media screen and (max-width: 800px) {
   .cloud1 .stepsContainer, .easingOn .stepsContainer {
     position: relative;
-    width: 110%;
-    height: 100%;
-    left: -10%;
-    margin: 0 10% 0 10%;
+    width: 70vw !important;
+    height: 70vh !important;
+    margin: 0 25%;
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .cloud1 .stepsContainer p, .easingOn .stepsContainer p {
     width: 80%;
@@ -698,13 +714,14 @@ z-index: 1;
 @media screen and (max-width: 800px) {
   .cloud2 .stepsContainer {
     position: relative;
-    width: 110%;
-    height: 100%;
-    left: -10%;
-    margin: 0 10% 0 10%;
+    width: 70vw !important;
+    height: 70vh !important;
+    margin: 0 25%;
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .cloud2 .stepsContainer p {
     width: 80%;
@@ -713,7 +730,7 @@ z-index: 1;
   }
   .cloud2 .stepsContainer img {
     max-width: 150px;
-    bottom: 50px;
+    bottom: -20px;
   }
 }
 
@@ -766,13 +783,14 @@ z-index: 1;
 @media screen and (max-width: 800px) {
   .cloud3 .stepsContainer {
     position: relative;
-    width: 110%;
-    height: 100%;
-    left: -10%;
-    margin: 0 10% 0 10%;
+    width: 70vw !important;
+    height: 70vh !important;
+    margin: 0 25%;
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .cloud3 .stepsContainer p {
     width: 80%;
@@ -834,13 +852,14 @@ z-index: 1;
 @media screen and (max-width: 800px) {
   .cloud4 .stepsContainer {
     position: relative;
-    width: 110%;
-    height: 100%;
-    left: -10%;
-    margin: 0 10% 0 10%;
+    width: 70vw !important;
+    height: 70vh !important;
+    margin: 0 25%;
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .cloud4 .stepsContainer p {
     width: 80%;
@@ -849,7 +868,7 @@ z-index: 1;
   }
   .cloud4 .stepsContainer img {
     max-width: 150px;
-    bottom: 50px;
+    bottom: -10px;
   }
 }
 
@@ -902,13 +921,14 @@ z-index: 1;
 @media screen and (max-width: 800px) {
   .cloud5 .stepsContainer {
     position: relative;
-    width: 110%;
-    height: 100%;
-    left: -10%;
-    margin: 0 10% 0 10%;
+    width: 70vw !important;
+    height: 70vh !important;
+    margin: 0 25%;
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .cloud5 .stepsContainer p {
     width: 80%;
@@ -970,13 +990,14 @@ z-index: 1;
 @media screen and (max-width: 800px) {
   .cloud6 .stepsContainer {
     position: relative;
-    width: 110%;
-    height: 100%;
-    left: -10%;
-    margin: 0 10% 0 10%;
-    padding: 0;
+    width: 70vw !important;
+    height: 70vh !important;
+    margin: 0 25%;
+    padding: 50px 0 0 0 !important;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .cloud6 .stepsContainer p {
     width: 80%;
@@ -985,7 +1006,7 @@ z-index: 1;
   }
   .cloud6 .stepsContainer img {
     max-width: 150px;
-    bottom: 50px;
+    bottom: -10px;
   }
 }
 
@@ -1016,7 +1037,21 @@ z-index: 1;
 
 #timelapseGalery .opisInfo {
  position: absolute;
- margin-TOP: -50%;
+ margin-top: -50%;
+ text-align: center;
+}
+
+#timelapseGalery .opisInfo h2 {
+ position: relative;
+ margin-top: -50%;
+ text-align: center;
+ font-size: 25px;
+}
+
+#timelapseGalery .opisInfo p {
+ position: relative;
+ font-size: 14px;
+ margin-top: 5%;
  text-align: center;
 }
 
@@ -1130,7 +1165,10 @@ z-index: 1;
   }
 }
 footer {
-  margin: 30px;
+  margin: 30px 50%;
+  transform: translateX(-50%);
+  width: 90%;
+
 }
 footer p {
   text-align: center;
@@ -1141,7 +1179,7 @@ footer p {
   font-size: 13px;
 }
 footer form legend {
-  padding: 15px;
+  padding: 15px 10px;
   font-family: "Quicksand", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -1171,10 +1209,40 @@ footer form fieldset label, footer form fieldset input, footer form fieldset but
   font-size: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  
+  footer {
+    width: 90%;
+  }
+  footer legend{
+    position: relative;
+    font-size: 12px;
+  }
+
+
+  footer form fieldset{
+    position: relative;
+    width: 80vw;
+  }
+
+  footer form fieldset .phone label, footer form fieldset .email label {
+    font-size: 12px;
+  }
+
+  footer form fieldset input{
+    width: 30%;
+    font-size: 12px;
+  }
+  footer form fieldset a{
+    margin: 10% 0 -2% 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .registry {
   position: absolute;
   min-width: 620px;
-  /* max-width: 350px; */
   min-height: 400px;
   top: 50%;
   left: 50%;
@@ -1186,11 +1254,35 @@ footer form fieldset label, footer form fieldset input, footer form fieldset but
           backdrop-filter: blur(4px);
 }
 .registry .registryForm {
-  /* width: 60%; */
   position: relative;
   top: 15px;
   padding: 5%;
 }
+
+@media screen and (max-width:800px) {
+  .registry .registryForm {
+  position: relative;
+  top: 15px;
+  margin: 0 50%;
+  transform: translateX(-50%);
+  padding: 5%;
+  width: 60%;
+}
+
+
+.registry .registryForm fieldset input {
+  position: relative;
+  width: 90% !important; 
+  margin-left: 4% !important;
+}
+
+
+.registry .registryForm fieldset .sex .inputs input {
+ margin-left: -40% !important;
+}
+
+}
+
 .registry .registryForm fieldset {
   border: none;
 }
