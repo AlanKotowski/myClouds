@@ -18,23 +18,25 @@ timelapseDIYList.addEventListener('click', ()=> {
    
 })
 
-// WINDOWS EASE-IN & OUT
+// PANELS EASE-IN & OUT
 
 const elements = document.querySelectorAll(".easing");
 
-const onScroll = () => {
-    const yScroll = window.pageYOffset;
-    const bodyRect = document.body.getBoundingClientRect();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("easingOn");
+    } else {
+      entry.target.classList.remove("easingOn");
+    }
+  });
+}, {
+  threshold: 0.3,
+  rootMargin: "0px 0px -10% 0px"
+});
 
-    elements.forEach((el) => {
-      const cloudRect = el.getBoundingClientRect();
-      const windowPosition = cloudRect.top - bodyRect.top - 200;
+elements.forEach(el => observer.observe(el));
 
-        el = yScroll >= windowPosition ? el.classList.add('easingOn') : el.classList.remove('easingOn');
-    })
-}
-
-window.addEventListener("scroll", onScroll)
 
 // TIMELAPSE GALERY
 

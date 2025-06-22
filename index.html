@@ -1,175 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+DK+Loopet:wght@100..400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mansh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+DK+Loopet:wght@100..400&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mansh" />
     <title>Clouds Timelapses</title>
-    <meta name="description" content="Clouds. Just clouds.">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Clouds. Just clouds." />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" async></script>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-    
-</head>
-<body>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA/4QAAO2pXwD///8A6ti/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQAAAAAAAAABAQEBAQECAgIBAQEBAAABAwMEBAMDAwMCAgMDBAEAAQMDBAMDAwMDAwIDAwQBAAEDAwQDAwMDAwMCAgMEAQAAAQMDAwMDAwMDAgICAQAAAAABAQQDAwMDBAICAQAAAAAAAAABAQMEBAQBAQAAAAAAAAAAAAABAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA//8AAP//AAD//wAA//8AAP4/AACAAwAAAAEAAAABAAAAAQAAgAMAAMAHAADwDwAA/D8AAP//AAA=" rel="icon" type="image/x-icon">
+  </head>
+  <body>
     <!-- TOP PANEL - LOGO & DROPDOWN MENU -->
     <nav class="pageNavigation">
-        <h1 class="logo"> <a href="index.html" id="logoLink">myClouds</a></h1>
-        <div class="menuWrapper">
-            <ul>
-                <a href="#intro"><li>Pomysł na hobby</li></a>
-                <li class="timelapseDIYList" >Zrób własny timelapse<p class="timelapseTriangle">&#128710;</p>
-                    <ul class="timelapseDIY">
-                        <a href="#cloud1"> <li class="timelapseDIYElement">Wybór urządzenia</li> </a>
-                        <a href="#cloud2"> <li class="timelapseDIYElement">Stabilizacja - statyw</li> </a>
-                        <a href="#cloud3"> <li class="timelapseDIYElement">Czas nagrania</li> </a>
-                        <a href="#cloud4"> <li class="timelapseDIYElement">Wybór obiektu</li> </a>
-                        <a href="#cloud5"> <li class="timelapseDIYElement">Montaż i edycja</li> </a>
-                        <a href="#cloud6"> <li class="timelapseDIYElement">Inna metoda</li> </a>
-                    </ul>
-                </li>
-                <a href="#timelapseGalery"><li>Galeria</li></a>
+      <h1 class="logo"><a href="index.html" id="logoLink">myClouds</a></h1>
+      <div class="menuWrapper">
+        <ul>
+          <a href="#intro"><li>Pomysł na hobby</li></a>
+          <li class="timelapseDIYList">
+            Zrób własny timelapse
+            <p class="timelapseTriangle">&#128710;</p>
+            <ul class="timelapseDIY">
+              <a href="#cloud1">
+                <li class="timelapseDIYElement">Wybór urządzenia</li>
+              </a>
+              <a href="#cloud2">
+                <li class="timelapseDIYElement">Stabilizacja - statyw</li>
+              </a>
+              <a href="#cloud3">
+                <li class="timelapseDIYElement">Czas nagrania</li>
+              </a>
+              <a href="#cloud4">
+                <li class="timelapseDIYElement">Wybór obiektu</li>
+              </a>
+              <a href="#cloud5">
+                <li class="timelapseDIYElement">Montaż i edycja</li>
+              </a>
+              <a href="#cloud6">
+                <li class="timelapseDIYElement">Inna metoda</li>
+              </a>
+            </ul>
+          </li>
+          <a href="#timelapseGalery"><li>Galeria</li></a>
         </ul>
-            <form action="forms.txt" method="post" class="loginForm">
-                <div class="loginSpace"> <label for="login">Login:</label> <input type="text" name="login" class="login" placeholder="przykłąd@domena.org"> <br></div>
-                   <div class="passwordSpace"> <label for="password"> Hasło:</label> <input type="password" name="password" class="password" placeholder="hasło"> <br></div>
-                   <div class="buttonsSpace"> 
-                     <input type="submit" value="Zaloguj" class="submitCredentials"> 
-                     albo 
-                     <a href="createAccount.html"><input type="button" value="Stwórz nowe konto" class="createAccountButton"></a>
-                 </div>
-                    
-               </form>
-               <div class="colorSpace">
-               <button class="burgerMenu">
-                <div class="line" id="line1"></div>
-                <div class="line" id="line2"></div>
-                <div class="line" id="line3"></div>
-              </button>
-            </div>
-            </div>
-        
+        <form action="forms.txt" method="post" class="loginForm">
+          <div class="loginSpace">
+            <label for="login">Login:</label>
+            <input
+              type="text"
+              name="login"
+              class="login"
+              placeholder="przykład@domena.org"
+            />
+            <br />
+          </div>
+          <div class="passwordSpace">
+            <label for="password"> Hasło:</label>
+            <input
+              type="password"
+              name="password"
+              class="password"
+              placeholder="hasło"
+            />
+            <br />
+          </div>
+          <div class="buttonsSpace">
+            <input type="submit" value="Zaloguj" class="submitCredentials" />
+            albo
+            <a href="createAccount.html"
+              ><input
+                type="button"
+                value="Stwórz nowe konto"
+                class="createAccountButton"
+            /></a>
+          </div>
+        </form>
+        <div class="colorSpace">
+          <button class="burgerMenu">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+          </button>
+        </div>
+      </div>
     </nav>
     <!-- VIDEOBACKGROUND -->
-    <header class="videoBackground"> 
-        <video muted loop autoplay class="videoBg">
-            <source src="images/tajmlapsy/timelapse5.mp4" type="video/mp4">
-        </video>
-        <!-- <img src="images/whiteWindow4.svg" alt="opened window" class="whiteWindow"> -->
+    <header class="videoBackground">
+      <video muted loop autoplay class="videoBg">
+        <source src="images/tajmlapsy/timelapse5.mp4" type="video/mp4" />
+      </video>
     </header>
-
-    <!-- FIRST ARTICLE -->
-    <section class="intro">
-        <div id="intro"></div>
-        <article>
-            <img src="images/cloudsStaring.jpg" alt="Staring at clouds" class="cloudsStaring">
-            <header class="headerIntro">
-            Obserwowanie płynących chmur to jedna z najprostszych i najbardziej kojących form relaksu. W dzisiejszym zabieganym świecie często brakuje nam czasu na chwilę spokoju — dlatego powstał timelapse.
-            </header>
-           <h1>Timelapse to przyspieszone nagranie zmian w czasie — rosnących roślin, przesuwających się cieni czy właśnie chmur. To Ty decydujesz, co chcesz uchwycić i pokazać światu w dynamicznej formie.</h1>
-    </article>
-    </section>
-    <br><br><br><br><br><br>
-    <!-- SECOND ARTICLE - TIMELAPSE DIY & EASING IN & OUT -->
+    <!-- FIRST ARTICLE - TIMELAPSE DIY & EASING IN & OUT -->
     <section id="timelapseDIY">
-        <article>
-            <header>
-                <img src="images/brain.jpg" alt="brain" class="brain">
-                <h1>Twój własny timelapse — to prostsze niż myślisz</h1>
-                <p>Nie potrzebujesz profesjonalnej kamery ani studia. Wystarczy trochę czasu, chęci i zwykły telefon, by stworzyć fascynujące nagranie pokazujące upływ czasu w przyspieszonym tempie.</p>
-
-            </header>
-                
-                <section class="cloud" id="cloud1"><div class="cloudName">Wybór urządzenia</div> <div class="cloud1 easing">
-                    <div class="stepsContainer">
-                        <p>Może to być smartfon, aparat lub kamera — zarówno zwykła, jak i profesjonalna. Im lepsza jakość sprzętu, tym wyraźniejszy efekt końcowy, ale najważniejsze jest to, by zacząć.</p>
-                        <img src="images/camera.png" alt="camera" class="stepsImages">
-                    </div>
-                   
-                </div></section>
-                <div class="cloud" id="cloud2"><div class="cloudName">Stabilizacja - statyw</div> <div class="cloud2 easing">
-                    <div class="stepsContainer">
-                        <img src="images/statyw.png" alt="camera" class="stepsImages">
-                        <p>Stabilne ustawienie urządzenia to klucz. Eliminuje drgania i rozmycia. A poza tym — kto wytrzyma z telefonem w ręce przez godzinę?</p>
-                    </div>
-                    </div></div>
-                <div class="cloud" id="cloud3"><div class="cloudName">Czas nagrania</div> <div class="cloud3 easing">
-                    
-                    <div class="stepsContainer">
-                        <p>Twój timelapse może trwać minutę albo godzinę — wszystko zależy od efektu, jaki chcesz uzyskać. Kluczowe jest regularne rejestrowanie zmian.</p>
-                        <img src="images/watch.png" alt="camera" class="stepsImages">
-                    </div>
-                    
-                    </div></div>
-                <div class="cloud" id="cloud4"><div class="cloudName">Wybór obiektu</div> <div class="cloud4 easing">
-                    
-                    <div class="stepsContainer">
-                        <img src="images/object.png" alt="camera" class="stepsImages">
-                        <p>To może być pojedynczy liść, kwiat, albo całe niebo nad miastem. Wybierz coś, co się zmienia — i pozwól, by Twoje ujęcie opowiedziało historię.</p>
-                    </div>
-                    
-                    </div></div>
-                <div class="cloud" id="cloud5"><div class="cloudName">Montaż i edycja</div> <div class="cloud5 easing">
-                    
-                    <div class="stepsContainer">
-                        <p>Większość programów do edycji wideo pozwala przyspieszyć materiał. To ostatni, ale bardzo ważny krok — to tutaj nadamy całości płynność i rytm.</p>
-
-                        <img src="images/device.png" alt="camera" class="stepsImages">
-                    </div>
-    
-                    </div></div>
-                <div class="cloud" id="cloud6"><div class="cloudName">Inna metoda</div> <div class="cloud6 easing">
-                    
-                    <div class="stepsContainer">
-                        <img src="images/alternative.png" alt="camera" class="stepsImages">
-                        <p>Timelapse można też stworzyć ze zdjęć — to po prostu film złożony z wielu klatek. Wystarczy wykonywać zdjęcia w regularnych odstępach i połączyć je w film.</p>
-                    </div>
-    
-                    </div></div>
-                
-        </article>
-    </section>
-<!-- THIRD SECTION - TIMELAPSE GALERY -->
-    <section id="timelapseGalery">
-        <div class="actualTimelapse">
-            <div class="timelapseContainer">
-                <div class="previousTimelapse previousTimelapseOn">&#9204;</div>
-                <div class="timelapses">
-                    <video src="images/tajmlapsy/timelapse1.mp4" class="timelapse"></video>
-                    <video src="images/tajmlapsy/timelapse2.mp4" class="timelapse"></video>
-                    <video src="images/tajmlapsy/timelapse3.mp4" class="timelapse"></video>
-                    <video src="images/tajmlapsy/timelapse4.mp4" class="timelapse"></video>
-                    <video src="images/tajmlapsy/timelapse5.mp4" class="timelapse"></video>
-                    <video src="images/tajmlapsy/timelapse6.mp4" class="timelapse"></video>
-                    <video src="images/tajmlapsy/timelapse7.mp4" class="timelapse"></video>
-                    <video src="images/tajmlapsy/timelapse8.mp4" class="timelapse"></video>
-                </div>
-                <div class="nextTimelapse">&#9205;</div>
+      <article>
+        <section class="cloud" id="cloud1">
+          <div class="cloudName">Wybór urządzenia</div>
+          <div class="cloud1 easing">
+            <div class="stepsContainer">
+              <p>
+                Może to być smartfon, aparat lub kamera — zarówno zwykła, jak i
+                profesjonalna. Im lepsza jakość sprzętu, tym wyraźniejszy efekt
+                końcowy, ale najważniejsze jest to, by zacząć.
+              </p>
+              <img src="images/camera.png" alt="camera" class="stepsImages" />
             </div>
+          </div>
+        </section>
+        <div class="cloud" id="cloud2">
+          <div class="cloudName">Stabilizacja - statyw</div>
+          <div class="cloud2 easing">
+            <div class="stepsContainer">
+              <img src="images/statyw.png" alt="camera" class="stepsImages" />
+              <p>
+                Stabilne ustawienie urządzenia to klucz. Eliminuje drgania i
+                rozmycia. A poza tym — kto wytrzyma z telefonem w ręce przez
+                godzinę?
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="opisInfo">
-        <h2>Moje nagrania</h2>
-<p>Zobacz, jak wygląda niebo, gdy czas przyspiesza.</p>
-</div>
-    </section>
-<!-- FOOTER -->
-    <footer>
-        <p>Strona stworzona przez Mansh.</p>
-<p>Wszystkie timelapsy zostały zarejestrowane przeze mnie.</p>
-<p>Zdjęcia chmur należą do ich właścicieli.</p>
-<p>Materiały wykorzystane wyłącznie w celach edukacyjnych.</p>
+        <div class="cloud" id="cloud3">
+          <div class="cloudName">Czas nagrania</div>
+          <div class="cloud3 easing">
+            <div class="stepsContainer">
+              <p>
+                Twój timelapse może trwać minutę albo godzinę — wszystko zależy
+                od efektu, jaki chcesz uzyskać. Kluczowe jest regularne
+                rejestrowanie zmian.
+              </p>
+              <img src="images/watch.png" alt="camera" class="stepsImages" />
+            </div>
+          </div>
+        </div>
+        <div class="cloud" id="cloud4">
+          <div class="cloudName">Wybór obiektu</div>
+          <div class="cloud4 easing">
+            <div class="stepsContainer">
+              <img src="images/object.png" alt="camera" class="stepsImages" />
+              <p>
+                To może być pojedynczy liść, kwiat, albo całe niebo nad miastem.
+                Wybierz coś, co się zmienia — i pozwól, by Twoje ujęcie
+                opowiedziało historię.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cloud" id="cloud5">
+          <div class="cloudName">Montaż i edycja</div>
+          <div class="cloud5 easing">
+            <div class="stepsContainer">
+              <p>
+                Większość programów do edycji wideo pozwala przyspieszyć
+                materiał. To ostatni, ale bardzo ważny krok — to tutaj nadamy
+                całości płynność i rytm.
+              </p>
 
-        <form action="contact.txt" method="post">
-            <fieldset>
-            <legend>Zostaw swoje dane kontaktowe — kiedyś się odezwę.</legend>
-            <span class="phone"> <label for="contactPhone">Numer telefonu::</label> <input type="tel" name="contactPhone" placeholder="000-000-000"><input type="submit" value="Wyślij" name="sendPhoneNumber"></span> <br>
-            <span class="email"> <label for="contactEmail">Adres email:</label> <input type="mail" name="contactEmail" id="contactEmail" placeholder="example@domain.org"><input type="submit" value="Wyślij" name="sendEmailAdress"></span> <br>
-            <a href="mailto:kotowskialan96@gmail.pl"><input type="button" name="mailsend" value="Lub wyślij maila ze swojej skrzynki pocztowej"></a>
+              <img src="images/device.png" alt="camera" class="stepsImages" />
+            </div>
+          </div>
+        </div>
+        <div class="cloud" id="cloud6">
+          <div class="cloudName">Inna metoda</div>
+          <div class="cloud6 easing">
+            <div class="stepsContainer">
+              <img
+                src="images/alternative.png"
+                alt="camera"
+                class="stepsImages"
+              />
+              <p>
+                Timelapse można też stworzyć ze zdjęć — to po prostu film
+                złożony z wielu klatek. Wystarczy wykonywać zdjęcia w
+                regularnych odstępach i połączyć je w film.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- SECOND SECTION - TIMELAPSE GALERY -->
+    <section id="timelapseGalery">
+      <div class="actualTimelapse">
+        <div class="timelapseContainer">
+          <div class="previousTimelapse previousTimelapseOn">&#9204;</div>
+          <div class="timelapses">
+            <video
+              src="images/tajmlapsy/timelapse1.mp4"
+              class="timelapse"
+            ></video>
+            <video
+              src="images/tajmlapsy/timelapse2.mp4"
+              class="timelapse"
+            ></video>
+            <video
+              src="images/tajmlapsy/timelapse3.mp4"
+              class="timelapse"
+            ></video>
+            <video
+              src="images/tajmlapsy/timelapse4.mp4"
+              class="timelapse"
+            ></video>
+            <video
+              src="images/tajmlapsy/timelapse5.mp4"
+              class="timelapse"
+            ></video>
+            <video
+              src="images/tajmlapsy/timelapse6.mp4"
+              class="timelapse"
+            ></video>
+            <video
+              src="images/tajmlapsy/timelapse7.mp4"
+              class="timelapse"
+            ></video>
+            <video
+              src="images/tajmlapsy/timelapse8.mp4"
+              class="timelapse"
+            ></video>
+          </div>
+          <div class="nextTimelapse">&#9205;</div>
+        </div>
+      </div>
+      <div class="opisInfo">
+        <h2>Moje nagrania</h2>
+        <p>Zobacz, jak wygląda niebo, gdy czas przyspiesza.</p>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <p>Strona stworzona przez Mansh.</p>
+      <p>Wszystkie timelapsy zostały zarejestrowane przeze mnie.</p>
+      <p>Zdjęcia chmur należą do ich właścicieli.</p>
+      <p>Materiały wykorzystane wyłącznie w celach edukacyjnych.</p>
+
+      <form action="contact.txt" method="post">
+        <fieldset>
+          <legend>Zostaw swoje dane kontaktowe — kiedyś się odezwę.</legend>
+          <span class="phone">
+            <label for="contactPhone">Numer telefonu::</label>
+            <input
+              type="tel"
+              name="contactPhone"
+              placeholder="000-000-000" /><input
+              type="submit"
+              value="Wyślij"
+              name="sendPhoneNumber"
+          /></span>
+          <br />
+          <span class="email">
+            <label for="contactEmail">Adres email:</label>
+            <input
+              type="mail"
+              name="contactEmail"
+              id="contactEmail"
+              placeholder="example@domain.org" /><input
+              type="submit"
+              value="Wyślij"
+              name="sendEmailAdress"
+          /></span>
+          <br />
+          <a href="mailto:kotowskialan96@gmail.pl"
+            ><input
+              type="button"
+              name="mailsend"
+              value="Lub wyślij maila ze swojej skrzynki pocztowej"
+          /></a>
         </fieldset>
-        </form>
+      </form>
     </footer>
-</body>
+  </body>
 </html>
